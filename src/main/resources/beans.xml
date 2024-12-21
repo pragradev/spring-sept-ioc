@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="a3" class="io.pragra.learning.springhellosept2024.Audi">
+        <constructor-arg name="model" value="A3"></constructor-arg>
+        <constructor-arg name="year" value="2016"></constructor-arg>
+        <constructor-arg name="engine" ref="dieselEngine"></constructor-arg>
+    </bean>
+    <bean name="a4" class="io.pragra.learning.springhellosept2024.Audi">
+        <constructor-arg name="model" value="A4"></constructor-arg>
+        <constructor-arg name="year" value="2025"></constructor-arg>
+        <constructor-arg name="engine" ref="dieselEngine"></constructor-arg>
+    </bean>
+    <bean name="dieselEngine" class="io.pragra.learning.springhellosept2024.DieselEngine">
+        <constructor-arg name="horsePower" value="350"></constructor-arg>
+    </bean>
+</beans>
