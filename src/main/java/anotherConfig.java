@@ -1,0 +1,2 @@
+public class anotherConfig {
+}
