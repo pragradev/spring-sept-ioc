@@ -11,7 +11,7 @@ public class AppConfig {
 //        return new Order();
 //    }
 
-    @Bean
+    @Bean()
     public Product thinkpad(){
         Product product = new Product();
         product.setName("ThinkPad T14");
@@ -27,12 +27,12 @@ public class AppConfig {
         product.setPrice(1400);
         return product;
     }
-    @Bean
-    public Audi a3(){
-        Audi a3 = new Audi("A3",2016,dieselEngine());
-        return a3;
-    }
-    @Bean
+//    @Bean
+//    public Audi a3(){
+//        Audi a3 = new Audi("A3",2016,dieselEngine());
+//        return a3;
+//    }
+    @Bean(initMethod = "initialize", destroyMethod = "destryConnection")
     public Audi a4(){
         Audi a4 = new Audi("A4",2025,dieselEngine());
         return a4;

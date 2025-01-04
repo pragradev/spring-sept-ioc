@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="a3" class="io.pragra.learning.springhellosept2024.Audi">
+    <bean name="a3" class="io.pragra.learning.springhellosept2024.Audi" init-method="initialize" destroy-method="destryConnection" scope="">
         <constructor-arg name="model" value="A3"></constructor-arg>
         <constructor-arg name="year" value="2016"></constructor-arg>
         <constructor-arg name="engine" ref="dieselEngine"></constructor-arg>
