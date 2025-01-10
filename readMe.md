@@ -17,3 +17,10 @@ XML: add List and Map in Audi class: add list and map in constructor
 convert same beans.xml into annotationbased applicaiton context
 use @component annotation and get bean from all 3 sources 
 and print those beans
+
+@Value -> spring, lombok
+SPEL 
+app.properties / yml
+DI: Dependency (Bean) Injection
+1) constructor based
+2) Setter based

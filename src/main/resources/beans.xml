@@ -14,6 +14,6 @@
         <constructor-arg name="engine" ref="dieselEngine"></constructor-arg>
     </bean>
     <bean name="dieselEngine" class="io.pragra.learning.springhellosept2024.DieselEngine">
-        <constructor-arg name="horsePower" value="350"></constructor-arg>
+        <constructor-arg name="horsePower" value='#{"350".length()}'></constructor-arg>
     </bean>
 </beans>

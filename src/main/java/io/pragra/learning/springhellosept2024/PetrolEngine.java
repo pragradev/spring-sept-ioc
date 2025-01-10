@@ -1,10 +1,17 @@
 package io.pragra.learning.springhellosept2024;
 
-public class PetrolEngine implements IEngine{
-    Integer horsePower;
+import org.springframework.stereotype.Component;
 
-    public PetrolEngine(Integer horsePower) {
-        this.horsePower = horsePower;
+@Component
+public class PetrolEngine implements IEngine{
+    Integer horsePower = 250;
+
+
+    @Override
+    public String toString() {
+        return "PetrolEngine{" +
+                "horsePower=" + horsePower +
+                '}';
     }
 
     @Override

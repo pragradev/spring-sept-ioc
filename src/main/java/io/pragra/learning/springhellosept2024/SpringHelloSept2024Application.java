@@ -18,17 +18,21 @@ public class SpringHelloSept2024Application {
 
     public static void main(String[] args) {
 
-        //ApplicationContext context = SpringApplication.run(SpringHelloSept2024Application.class, args);
-        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Audi audi1 = context.getBean("a3", Audi.class);
-        Audi audi2 = context.getBean("a3", Audi.class);
-        Audi audi3 = context.getBean("a3", Audi.class);
-        Audi audi4 = context.getBean("a3", Audi.class);
-        System.out.println(audi1);
-        System.out.println(audi2);
-        System.out.println(audi3);
-        System.out.println(audi4);
-        context.registerShutdownHook();
+        ApplicationContext context = SpringApplication.run(SpringHelloSept2024Application.class, args);
+        Audi audi = context.getBean(Audi.class);
+        System.out.println(audi);
+
+
+        //        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+//        Audi audi1 = context.getBean("a3", Audi.class);
+//        Audi audi2 = context.getBean("a3", Audi.class);
+//        Audi audi3 = context.getBean("a3", Audi.class);
+//        Audi audi4 = context.getBean("a3", Audi.class);
+//        System.out.println(audi1);
+//        System.out.println(audi2);
+//        System.out.println(audi3);
+//        System.out.println(audi4);
+//        context.registerShutdownHook();
 
 //        ApplicationContext context = new AnnotationConfigApplicationContext
 //                ("io.pragra.learning.springhellosept2024.config");

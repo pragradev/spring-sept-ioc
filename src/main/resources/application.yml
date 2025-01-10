@@ -1,0 +1,15 @@
+model: a1234568901234
+yr: 2020
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-hello-sept-2024
+
+audi:
+  model:
+    year:
+      data1: 2323232
+      data2: 23432423
+      data3: 678678686
+      data4: 7636352623
